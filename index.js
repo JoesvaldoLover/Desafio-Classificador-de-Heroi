@@ -18,13 +18,27 @@ function getHeroiNivel(XP) {
 
     return nivel
 }
+// Gera uma quantia aletória de XP, entre 250 a 1000
+function getRecompensaXP() {
+    return Math.round(Math.random() * 750 + 250)
+}
 
-// Variável XP
 const heroiNome = "Felipe"
-let heroiXP = 5246
+let heroiXP = 900
 
+// SIMULADOR DE BATALHAS
+// O herói ira entrar em combate 10 vezes
+// O herói possui uma chance de 66% de ganhar uma batalha
+// Em caso de vitória, adiciona resultado de "getRecompensaXP" à heroiXP
+const batalhasLimite = 10
+const chanceVitoria = 0.66
 
-let heroiNivel = getHeroiNivel(heroiXP)
+for(let i = 0; i < batalhasLimite; i++){
+    if(Math.random() <= chanceVitoria)
+        heroiXP += getRecompensaXP()
+}
+
+const heroiNivel = getHeroiNivel(heroiXP)
 
 console.log("O Herói de nome " + heroiNome + " está no nível de " + heroiNivel)
 
