@@ -19,4 +19,4 @@ Além dos requisitos exigidos, foi adicionada a funcionalidade **"Batalhas"**:
 - Antes de classificar seu nível, o herói entra em 10 batalhas;
 - Em cada batalha o herói possui uma chance de 66% de sair vitorioso;
 - Caso vença, aumenta quantia de XP atual;
-- *Quanto XP é ganho varia entre 250 a 1000*
+- *Quanto XP é ganho varia entre 250 a 1000*.
