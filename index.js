@@ -26,8 +26,8 @@ function getRecompensaXP() {
 const heroiNome = "Felipe"
 let heroiXP = 900
 
-// SIMULADOR DE BATALHAS
-// O herói ira entrar em combate 10 vezes
+// BATALHAS
+// O herói irá entrar em combate 10 vezes
 // O herói possui uma chance de 66% de ganhar uma batalha
 // Em caso de vitória, adiciona resultado de "getRecompensaXP" à heroiXP
 const batalhasLimite = 10
